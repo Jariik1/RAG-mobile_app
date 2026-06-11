@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        О проекте
+    </title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <div class="logo">
+            AI Knowledge Hub
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О проекте</a></li>
+            <li><a href="team.html">Участники</a></li>
+            <li><a href="journal.html">Журнал</a></li>
+            <li><a href="resources.html">Ресурсы</a></li>
+            <li><a href="passport.html">Паспорт</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>
+            О проекте
+        </h1>
+
+        <p>
+            Описание архитектуры и принципов работы
+            сервиса автоматизированного обучения
+            RAG-моделей.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="glass-card">
+
+            <h2>
+                Проблематика
+            </h2>
+
+            <p>
+                Корпоративные знания зачастую распределены
+                между различными источниками:
+                документами, базами данных,
+                внутренними порталами и файловыми хранилищами.
+                Это приводит к увеличению времени поиска
+                информации и снижению эффективности работы.
+            </p>
+
+            <p>
+                Использование технологий Retrieval-Augmented
+                Generation позволяет объединить поиск
+                релевантной информации и возможности
+                генеративного искусственного интеллекта
+                в единую платформу.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="center-title">
+            Архитектура решения
+        </h2>
+
+        <div class="architecture-large">
+
+            <div class="architecture-item">
+                OpenWebUI
+            </div>
+
+            <div class="architecture-arrow">
+                ↓
+            </div>
+
+            <div class="architecture-item">
+                RabbitMQ
+            </div>
+
+            <div class="architecture-arrow">
+                ↓
+            </div>
+
+            <div class="architecture-item">
+                ChromaDB
+            </div>
+
+            <div class="architecture-arrow">
+                ↓
+            </div>
+
+            <div class="architecture-item">
+                Ollama + Gemma
+            </div>
+
+            <div class="architecture-arrow">
+                ↓
+            </div>
+
+            <div class="architecture-item">
+                Пользователь
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section dark-section">
+
+    <div class="container">
+
+        <h2 class="center-title">
+            Преимущества
+        </h2>
+
+        <div class="cards-grid">
+
+            <div class="info-card">
+
+                <h3>
+                    Семантический поиск
+                </h3>
+
+                <p>
+                    Поиск информации по смыслу,
+                    а не только по ключевым словам.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    Локальное развёртывание
+                </h3>
+
+                <p>
+                    Данные остаются внутри
+                    инфраструктуры организации.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    Масштабируемость
+                </h3>
+
+                <p>
+                    Поддержка роста количества
+                    данных и пользователей.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    AI-as-a-Service
+                </h3>
+
+                <p>
+                    Единая платформа для работы
+                    с корпоративными знаниями.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <a href="index.html"
+           class="btn-primary">
+            ← Вернуться на главную
+        </a>
+
+    </div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
