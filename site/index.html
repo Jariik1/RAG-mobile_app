@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Hub | RAG-as-a-Service</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="nebula-body">
+
+<div id="progress-bar"></div>
+
+<nav class="nb-nav">
+    <div class="nb-nav-inner">
+        <div class="nb-brand">AI · HUB</div>
+        <ul class="nb-links">
+            <li><a href="index.html" class="active-link">Главная</a></li>
+            <li><a href="about.html">О проекте</a></li>
+            <li><a href="team.html">Участники</a></li>
+            <li><a href="journal.html">Журнал</a></li>
+            <li><a href="resources.html">Ресурсы</a></li>
+            <li><a href="passport.html">Паспорт</a></li>
+        </ul>
+        
+    </div>
+</nav>
+
+<!-- ============ HERO BLOCK ============ -->
+<section class="nb-hero">
+
+    <!-- top meta strip -->
+    <div class="nb-meta-strip">
+        <div class="nb-meta-col">
+            <span class="nb-meta-label">UI / UX</span>
+            <span class="nb-meta-val">Android App</span>
+        </div>
+        <div class="nb-meta-col">
+            <span class="nb-meta-label">Category</span>
+            <span class="nb-meta-val">RAG System</span>
+        </div>
+        <div class="nb-meta-col">
+            <span class="nb-meta-label">Project Duration</span>
+            <span class="nb-meta-val">12 Weeks</span>
+        </div>
+        <div class="nb-meta-col nb-meta-mark">
+            <span>AI&copy;</span>
+            <span>HUB</span>
+        </div>
+    </div>
+
+    <!-- title grid -->
+    <div class="nb-hero-grid">
+        <h1 class="nb-headline">
+            Будущее <br>
+            корпоративного <br>
+            <span class="nb-ghost">поиска знаний</span>
+        </h1>
+
+        <p class="nb-sub">
+            Переосмысляем то, чем может быть
+            внутренний поиск — превращаем
+            хаос документов в интерактивный,
+            интеллектуальный диалог.
+        </p>
+    </div>
+
+    <!-- giant background brand text -->
+    <div class="nb-bg-brand">AI HUB</div>
+
+    <!-- left side meta -->
+    <div class="nb-side nb-side-left">
+        <div class="nb-side-row">
+            <span class="nb-side-label">Nebula</span>
+            <span class="nb-side-val">RAG App</span>
+        </div>
+        <div class="nb-side-row nb-side-row-mid">
+            <span class="nb-side-label">Project Type:</span>
+            <span class="nb-side-val">AI-as-a-Service</span>
+        </div>
+    </div>
+
+    <!-- right side meta -->
+    <div class="nb-side nb-side-right">
+        <div class="nb-side-row">
+            <span class="nb-side-label">Jun 12</span>
+            <span class="nb-side-val">2026</span>
+        </div>
+        <div class="nb-side-row nb-side-row-mid">
+            <span class="nb-side-label">Stack:</span>
+            <span class="nb-side-val">
+                Ollama<br>
+                ChromaDB<br>
+                Gemma<br>
+                OpenWebUI
+            </span>
+        </div>
+        <div class="nb-side-row">
+            <span class="nb-side-label">Location:</span>
+            <span class="nb-side-val">Московский политех</span>
+        </div>
+    </div>
+
+    <!-- ============ ANDROID PHONE MOCKUP — RAG UI ============ -->
+    <div class="nb-phone-wrap">
+
+        <!-- soft glow behind phone -->
+        <div class="nb-phone-glow"></div>
+
+        <div class="nb-phone">
+            <div class="nb-phone-notch"></div>
+
+            <!-- status bar -->
+            <div class="nb-status">
+                <span class="nb-status-time">9:41</span>
+                <div class="nb-status-icons">
+                    <span class="nb-dot"></span>
+                    <span class="nb-dot"></span>
+                    <span class="nb-bat"></span>
+                </div>
+            </div>
+
+            <!-- app header -->
+            <div class="nb-app-head">
+                <div class="nb-app-burger">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="nb-app-title">
+                    <span class="nb-app-name">Nebula RAG</span>
+                    <span class="nb-app-sub">gemma-3 · online</span>
+                </div>
+                <div class="nb-app-avatar">SZ</div>
+            </div>
+
+            <!-- chat scroll area -->
+            <div class="nb-chat">
+
+                <!-- date pill -->
+                <div class="nb-chat-pill">Сегодня</div>
+
+                <!-- user msg -->
+                <div class="nb-msg nb-msg-user">
+                    <div class="nb-bubble nb-bubble-user">
+                        Найди регламент по обработке
+                        входящих заявок и кратко
+                        перескажи раздел про SLA.
+                    </div>
+                </div>
+
+                <!-- assistant msg -->
+                <div class="nb-msg nb-msg-bot">
+                    <div class="nb-bot-avatar">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L14 8H20L15 12L17 18L12 14L7 18L9 12L4 8H10L12 2Z" fill="#ff7a1a"/>
+                        </svg>
+                    </div>
+                    <div class="nb-bubble nb-bubble-bot">
+                        <p>Нашёл <b>3 документа</b> в базе знаний.
+                        Главное про SLA:</p>
+                        <ul class="nb-bubble-list">
+                            <li>Ответ на заявку — до 4 ч</li>
+                            <li>Решение P1 — до 24 ч</li>
+                            <li>Эскалация — после 2-го SLA</li>
+                        </ul>
+
+                        <!-- source chips -->
+                        <div class="nb-sources">
+                            <span class="nb-source-chip">
+                                <span class="nb-source-num">1</span>
+                                regulation_2025.pdf
+                            </span>
+                            <span class="nb-source-chip">
+                                <span class="nb-source-num">2</span>
+                                sla_matrix.docx
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- typing indicator -->
+                <div class="nb-msg nb-msg-bot">
+                    <div class="nb-bot-avatar nb-bot-avatar-typing">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L14 8H20L15 12L17 18L12 14L7 18L9 12L4 8H10L12 2Z" fill="#ff7a1a"/>
+                        </svg>
+                    </div>
+                    <div class="nb-bubble nb-bubble-bot nb-bubble-typing">
+                        <span class="nb-typ"></span>
+                        <span class="nb-typ"></span>
+                        <span class="nb-typ"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- composer -->
+            <div class="nb-composer">
+                <button class="nb-comp-btn">＋</button>
+                <div class="nb-comp-field">
+                    Спросить про документы…
+                </div>
+                <button class="nb-comp-mic">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                        <rect x="9" y="3" width="6" height="12" rx="3"/>
+                        <path d="M5 11a7 7 0 0014 0M12 18v3"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- home indicator -->
+            <div class="nb-home-ind"></div>
+        </div>
+    </div>
+
+    <!-- floating right action stack -->
+    <div class="nb-fab-stack">
+        <div class="nb-fab"><span>↻</span></div>
+        <div class="nb-fab"><span>▮▮</span></div>
+        <div class="nb-fab"><span>→</span></div>
+    </div>
+
+</section>
+
+<!-- ============ DARK INSIGHTS BLOCK ============ -->
+<section class="nb-dark">
+
+    <div class="nb-dark-meta">
+        <div class="nb-dm-left">Nebula RAG</div>
+        <div class="nb-dm-right">AI Knowledge Hub · UI/UX</div>
+    </div>
+
+    <div class="nb-dark-grid">
+        <div class="nb-dark-num">
+            01 /
+            <div class="nb-dark-num-label">The Core Idea</div>
+        </div>
+
+        <div class="nb-dark-headline">
+            <div class="nb-insights-tag">
+                <span class="nb-ins-ico">✦</span> Insights /
+            </div>
+            <h2>
+                Скучные корпоративные
+                <span class="nb-muted">порталы? В сторону.</span>
+                <br>
+                <span class="nb-muted">AI HUB превращает ваши</span>
+                документы в живой диалог.
+            </h2>
+        </div>
+    </div>
+
+    <!-- second phone mockup — knowledge base -->
+    <div class="nb-phone2-wrap">
+
+        <div class="nb-phone nb-phone-dark">
+            <div class="nb-phone-notch"></div>
+
+            <div class="nb-status nb-status-dark">
+                <span class="nb-status-time">9:41</span>
+                <div class="nb-status-icons">
+                    <span class="nb-dot dark"></span>
+                    <span class="nb-dot dark"></span>
+                    <span class="nb-bat dark"></span>
+                </div>
+            </div>
+
+            <div class="nb-app-head nb-app-head-dark">
+                <div class="nb-brand-mini">✦ NEBULA</div>
+                <div class="nb-app-avatar nb-app-avatar-dark">SZ</div>
+            </div>
+
+            <div class="nb-search-bar">
+                <span class="nb-search-text">
+                    Доброе утро, <b>Анна.</b> Что найдём?
+                </span>
+                <span class="nb-search-mic">●</span>
+            </div>
+
+            <div class="nb-tabs">
+                <div class="nb-tab nb-tab-active">
+                    Базы знаний
+                    <span class="nb-tab-badge">New</span>
+                </div>
+                <div class="nb-tab">Подкасты <span class="nb-tab-soon">soon</span></div>
+                <div class="nb-tab">Документ…</div>
+            </div>
+
+            <div class="nb-cards-row">
+                <div class="nb-kb-card nb-kb-1">
+                    <div class="nb-kb-add">＋</div>
+                    <div class="nb-kb-label">HR Docs</div>
+                </div>
+                <div class="nb-kb-card nb-kb-2">
+                    <div class="nb-kb-add">＋</div>
+                    <div class="nb-kb-label">Регламенты</div>
+                </div>
+                <div class="nb-kb-card nb-kb-3">
+                    <div class="nb-kb-add">＋</div>
+                    <div class="nb-kb-label">Tech Wiki</div>
+                </div>
+            </div>
+
+            <div class="nb-bottom-bar">
+                <div class="nb-bb-item">
+                    <span class="nb-bb-ico">★</span>
+                    Пригласить коллег
+                </div>
+                <div class="nb-bb-play">▶</div>
+            </div>
+
+            <div class="nb-home-ind dark"></div>
+        </div>
+
+        <div class="nb-create-bubble">
+            <span class="nb-cb-plus">＋</span>
+            <span>Создать<br>базу</span>
+        </div>
+    </div>
+
+    <p class="nb-about-block">
+        AI HUB переосмысляет внутренний поиск —
+        превращает разрозненные документы в живой,
+        интерактивный диалог на базе локальных LLM.
+    </p>
+
+</section>
+
+<!-- ============ MOBILE SHOWCASE ============ -->
+<section class="nb-showcase" id="mobile-showcase">
+
+    <div class="nb-showcase-head">
+        <span class="nb-showcase-eyebrow">
+            <span>📱</span>
+            <span>Mobile · Android</span>
+        </span>
+        <h2>
+            Знания в кармане —
+            <span class="nb-muted">в одном жесте.</span>
+        </h2>
+        <p>
+            Нативный Android-клиент, который превращает
+            корпоративный поиск в живой диалог.
+            С liquid-glass интерфейсом и мгновенным откликом.
+        </p>
+    </div>
+
+    <div class="nb-showcase-inner">
+
+        <!-- LEFT feature column -->
+        <div class="nb-feat-col nb-feat-col-left">
+
+            <div class="nb-feat-pill" data-anim-delay="0">
+                <div class="nb-feat-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4">
+                        <circle cx="11" cy="11" r="7"/>
+                        <path d="M21 21l-4.5-4.5"/>
+                    </svg>
+                </div>
+                <div class="nb-feat-text">
+                    <div class="nb-feat-title">Семантический поиск</div>
+                    <div class="nb-feat-sub">Понимает смысл, а не только слова</div>
+                </div>
+            </div>
+
+            <div class="nb-feat-pill" data-anim-delay="120">
+                <div class="nb-feat-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4">
+                        <path d="M21 11.5a8.38 8.38 0 01-1.9 5.4A8.5 8.5 0 0112.5 21 8.38 8.38 0 017.1 19.1L3 20l1-3.9A8.38 8.38 0 013 11.5 8.5 8.5 0 0111.5 3a8.38 8.38 0 015.4 1.9A8.5 8.5 0 0121 11.5z"/>
+                    </svg>
+                </div>
+                <div class="nb-feat-text">
+                    <div class="nb-feat-title">AI-ассистент</div>
+                    <div class="nb-feat-sub">Отвечает по корпоративным данным</div>
+                </div>
+            </div>
+
+            <div class="nb-feat-pill" data-anim-delay="240">
+                <div class="nb-feat-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4">
+                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                    </svg>
+                </div>
+                <div class="nb-feat-text">
+                    <div class="nb-feat-title">Источники</div>
+                    <div class="nb-feat-sub">Каждый ответ — со ссылкой</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PHONE in center -->
+        <div class="nb-sc-phone-wrap">
+            <div class="nb-sc-phone-halo"></div>
+
+            <div class="nb-sc-phone">
+                <div class="nb-phone-notch"></div>
+
+                <div class="nb-status">
+                    <span class="nb-status-time">9:41</span>
+                    <div class="nb-status-icons">
+                        <span class="nb-dot"></span>
+                        <span class="nb-dot"></span>
+                        <span class="nb-bat"></span>
+                    </div>
+                </div>
+
+                <div class="nb-sc-screens">
+
+                    <!-- ============ SCREEN 1 — CHAT ============ -->
+                    <div class="nb-sc-screen active" data-screen="0">
+                        <div class="nb-app-head">
+                            <div class="nb-app-burger"><span></span><span></span><span></span></div>
+                            <div class="nb-app-title">
+                                <span class="nb-app-name">Чат с базой</span>
+                                <span class="nb-app-sub">gemma-3 · online</span>
+                            </div>
+                            <div class="nb-app-avatar">SZ</div>
+                        </div>
+
+                        <div class="nb-chat">
+                            <div class="nb-chat-pill">Сегодня</div>
+                            <div class="nb-msg nb-msg-user">
+                                <div class="nb-bubble nb-bubble-user">
+                                    Что говорит политика по отпускам?
+                                </div>
+                            </div>
+                            <div class="nb-msg nb-msg-bot">
+                                <div class="nb-bot-avatar">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L14 8H20L15 12L17 18L12 14L7 18L9 12L4 8H10L12 2Z" fill="#ff7a1a"/>
+                                    </svg>
+                                </div>
+                                <div class="nb-bubble nb-bubble-bot">
+                                    <p>Согласно <b>HR-регламенту</b>:</p>
+                                    <ul class="nb-bubble-list">
+                                        <li>28 календарных дней</li>
+                                        <li>За 2 недели до начала</li>
+                                    </ul>
+                                    <div class="nb-sources">
+                                        <span class="nb-source-chip">
+                                            <span class="nb-source-num">1</span>
+                                            hr_policy.pdf
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nb-composer">
+                            <button class="nb-comp-btn">＋</button>
+                            <div class="nb-comp-field">Напишите вопрос…</div>
+                            <button class="nb-comp-mic">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                    <rect x="9" y="3" width="6" height="12" rx="3"/>
+                                    <path d="M5 11a7 7 0 0014 0M12 18v3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ============ SCREEN 2 — DOCS ============ -->
+                    <div class="nb-sc-screen" data-screen="1">
+                        <div class="nb-app-head">
+                            <div class="nb-app-burger"><span></span><span></span><span></span></div>
+                            <div class="nb-app-title">
+                                <span class="nb-app-name">Документы</span>
+                                <span class="nb-app-sub">142 файла · обновлено</span>
+                            </div>
+                            <div class="nb-app-avatar">SZ</div>
+                        </div>
+
+                        <div class="nb-sc-docs">
+                            <div class="nb-sc-docs-head">
+                                <h4>База знаний</h4>
+                                <span>indexed</span>
+                            </div>
+
+                            <div class="nb-sc-search">
+                                🔍 Поиск по документам…
+                            </div>
+
+                            <div class="nb-sc-doc-list">
+                                <div class="nb-sc-doc">
+                                    <div class="nb-sc-doc-ico">📄</div>
+                                    <div class="nb-sc-doc-info">
+                                        <div class="nb-sc-doc-name">hr_policy.pdf</div>
+                                        <div class="nb-sc-doc-meta">2.4 MB · вчера</div>
+                                    </div>
+                                    <span class="nb-sc-doc-arrow">›</span>
+                                </div>
+                                <div class="nb-sc-doc">
+                                    <div class="nb-sc-doc-ico b">📊</div>
+                                    <div class="nb-sc-doc-info">
+                                        <div class="nb-sc-doc-name">sla_matrix.docx</div>
+                                        <div class="nb-sc-doc-meta">820 KB · 3 дня назад</div>
+                                    </div>
+                                    <span class="nb-sc-doc-arrow">›</span>
+                                </div>
+                                <div class="nb-sc-doc">
+                                    <div class="nb-sc-doc-ico c">📋</div>
+                                    <div class="nb-sc-doc-info">
+                                        <div class="nb-sc-doc-name">regulation_2025</div>
+                                        <div class="nb-sc-doc-meta">1.1 MB · неделю</div>
+                                    </div>
+                                    <span class="nb-sc-doc-arrow">›</span>
+                                </div>
+                                <div class="nb-sc-doc">
+                                    <div class="nb-sc-doc-ico">📐</div>
+                                    <div class="nb-sc-doc-info">
+                                        <div class="nb-sc-doc-name">tech_specs.md</div>
+                                        <div class="nb-sc-doc-meta">312 KB · мес.</div>
+                                    </div>
+                                    <span class="nb-sc-doc-arrow">›</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nb-home-ind"></div>
+                    </div>
+
+                    <!-- ============ SCREEN 3 — STATS ============ -->
+                    <div class="nb-sc-screen" data-screen="2">
+                        <div class="nb-app-head">
+                            <div class="nb-app-burger"><span></span><span></span><span></span></div>
+                            <div class="nb-app-title">
+                                <span class="nb-app-name">Статистика</span>
+                                <span class="nb-app-sub">за неделю</span>
+                            </div>
+                            <div class="nb-app-avatar">SZ</div>
+                        </div>
+
+                        <div class="nb-sc-stat">
+                            <div class="nb-sc-stat-card">
+                                <div class="nb-sc-stat-label">Запросов</div>
+                                <div class="nb-sc-stat-val">1 248</div>
+                                <div class="nb-sc-stat-trend">↗ +24% за неделю</div>
+                                <div class="nb-sc-stat-bars">
+                                    <div class="nb-sc-bar"></div>
+                                    <div class="nb-sc-bar"></div>
+                                    <div class="nb-sc-bar"></div>
+                                    <div class="nb-sc-bar"></div>
+                                    <div class="nb-sc-bar"></div>
+                                    <div class="nb-sc-bar"></div>
+                                    <div class="nb-sc-bar"></div>
+                                </div>
+                            </div>
+
+                            <div class="nb-sc-stat-list">
+                                <div class="nb-sc-stat-row">
+                                    <span>Точность</span>
+                                    <b>92%</b>
+                                </div>
+                                <div class="nb-sc-stat-row">
+                                    <span>Среднее время</span>
+                                    <b>4.2с</b>
+                                </div>
+                                <div class="nb-sc-stat-row">
+                                    <span>Активных юзеров</span>
+                                    <b>87</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nb-home-ind"></div>
+                    </div>
+
+                </div>
+
+                <div class="nb-home-ind"></div>
+            </div>
+        </div>
+
+        <!-- RIGHT feature column -->
+        <div class="nb-feat-col nb-feat-col-right">
+
+            <div class="nb-feat-pill" data-anim-delay="60">
+                <div class="nb-feat-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <div class="nb-feat-text">
+                    <div class="nb-feat-title">SSO авторизация</div>
+                    <div class="nb-feat-sub">Корпоративная учётка</div>
+                </div>
+            </div>
+
+            <div class="nb-feat-pill" data-anim-delay="180">
+                <div class="nb-feat-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4">
+                        <rect x="2" y="6" width="20" height="12" rx="2"/>
+                        <path d="M12 12v.01M7 12v.01M17 12v.01"/>
+                    </svg>
+                </div>
+                <div class="nb-feat-text">
+                    <div class="nb-feat-title">Оффлайн-кэш</div>
+                    <div class="nb-feat-sub">Работает без интернета</div>
+                </div>
+            </div>
+
+            <div class="nb-feat-pill" data-anim-delay="300">
+                <div class="nb-feat-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <div class="nb-feat-text">
+                    <div class="nb-feat-title">Мгновенный отклик</div>
+                    <div class="nb-feat-sub">Ответ за 4–6 секунд</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- screen indicator dots -->
+    <div class="nb-sc-dots">
+        <span class="nb-sc-dot active" data-dot="0"></span>
+        <span class="nb-sc-dot" data-dot="1"></span>
+        <span class="nb-sc-dot" data-dot="2"></span>
+    </div>
+
+</section>
+
+<!-- ============ KPI + TECH BLOCKS ============ -->
+<section class="nb-section">
+    <div class="nb-container">
+
+        <div class="nb-num-row">
+            <span class="nb-num-tag">02 /</span>
+            <h3>Что внутри</h3>
+        </div>
+
+        <div class="nb-kpi-grid">
+            <div class="nb-kpi">
+                <span class="nb-kpi-val">90<i>%</i></span>
+                <span class="nb-kpi-lbl">точности ответов</span>
+            </div>
+            <div class="nb-kpi">
+                <span class="nb-kpi-val">60<i>%</i></span>
+                <span class="nb-kpi-lbl">экономии времени</span>
+            </div>
+            <div class="nb-kpi">
+                <span class="nb-kpi-val">6<i>с</i></span>
+                <span class="nb-kpi-lbl">среднее время ответа</span>
+            </div>
+            <div class="nb-kpi">
+                <span class="nb-kpi-val">85<i>%</i></span>
+                <span class="nb-kpi-lbl">Recall@10</span>
+            </div>
+        </div>
+
+        <div class="nb-num-row" style="margin-top:120px;">
+            <span class="nb-num-tag">03 /</span>
+            <h3>Стек технологий</h3>
+        </div>
+
+        <div class="nb-tech-grid">
+            <div class="nb-tech">
+                <span class="nb-tech-num">/01</span>
+                <h4>OpenWebUI</h4>
+                <p>Веб-интерфейс для общения с RAG-моделью.</p>
+            </div>
+            <div class="nb-tech">
+                <span class="nb-tech-num">/02</span>
+                <h4>Ollama</h4>
+                <p>Локальный рантайм для запуска LLM на сервере.</p>
+            </div>
+            <div class="nb-tech">
+                <span class="nb-tech-num">/03</span>
+                <h4>Gemma</h4>
+                <p>Генеративная модель для построения ответов.</p>
+            </div>
+            <div class="nb-tech">
+                <span class="nb-tech-num">/04</span>
+                <h4>ChromaDB</h4>
+                <p>Векторное хранилище для embedding-поиска.</p>
+            </div>
+            <div class="nb-tech">
+                <span class="nb-tech-num">/05</span>
+                <h4>RabbitMQ</h4>
+                <p>Очереди для фоновой индексации документов.</p>
+            </div>
+            <div class="nb-tech">
+                <span class="nb-tech-num">/06</span>
+                <h4>Docker</h4>
+                <p>Контейнеризация и быстрый деплой.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="nb-cta">
+    <div class="nb-container">
+        <h2>Готовы превратить документы в диалог?</h2>
+        <div class="nb-cta-row">
+            <a href="about.html" class="nb-cta-btn primary">Подробнее</a>
+            <a href="passport.html" class="nb-cta-btn ghost">Паспорт проекта</a>
+        </div>
+    </div>
+</section>
+
+<footer class="nb-footer">
+    <div class="nb-container">
+        <div class="nb-footer-grid">
+            <div class="nb-footer-brand">
+                <h3>AI<span class="dot"></span>HUB</h3>
+                <p>Корпоративная база знаний на стеке RAG. Проектная деятельность · Московский политех · 2026.</p>
+            </div>
+            <div class="nb-footer-col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Участники</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                </ul>
+            </div>
+            <div class="nb-footer-col">
+                <h4>Материалы</h4>
+                <ul>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="passport.html">Паспорт проекта</a></li>
+                    <li><a href="mobile.html">Мобильная версия</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nb-footer-bottom">
+            <div class="nb-footer-mark">Nebula RAG © 2026</div>
+            <div>Сделано в Московском политехе</div>
+        </div>
+    </div>
+</footer>
+
+<button id="scrollTopBtn">↑</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
